@@ -11,11 +11,10 @@ Official research release for the **CodeGen2** models (`3B`, `7B`, `16B`) for **
 Program synthesis in the form of auto-regressive sampling can be performed as follows:
 
 ```python
-import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-tokenizer = AutoTokenizer.from_pretrained()
-model = AutoModelForCausalLM.from_pretrained()
-inputs = tokenizer("# this function prints hello world", return_tensors="pt").to(0)
+tokenizer = AutoTokenizer.from_pretrained("checkpoints/codegen2-6B")
+model = CodeGenForCausalLM.from_pretrained("checkpoints/codegen2-6B", torch_dtype=torch.float16, revision="sharded")
+inputs = tokenizer("# this function prints hello world", return_tensors="pt")
 sample = model.generate(**inputs, max_length=128)
 print(tokenizer.decode(sample[0], truncate_before_pattern=[r"\n\n^#", "^'''", "\n\n\n"]))
 ```
