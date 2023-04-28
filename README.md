@@ -6,6 +6,17 @@ Official research release for the **CodeGen2** models (`3B`, `7B`, `16B`) for **
 
 *Authors*: [Erik Nijkamp](https://enijkamp.github.io/)\*, [Hiroaki Hayashi](https://hiroakih.me/)\*, [Caiming Xiong](https://scholar.google.com/citations?user=vaSdahkAAAAJ&hl=en), [Silvio Savarese](https://scholar.google.com/citations?user=ImpbxLsAAAAJ&hl=en), and [Yingbo Zhou](https://scholar.google.com/citations?user=H_6RQ7oAAAAJ&hl=en) (* indicates equal contribution)
 
+## Hugging Face Integration
+
+Model checkpoints are published at Hugging Face Hub.
+
+* [CodeGen2-1B](https://huggingface.co/Salesforce/codegen2-1B)
+* [CodeGen2-3.7B](https://huggingface.co/Salesforce/codegen2-3.7B)
+* [CodeGen2-7B](https://huggingface.co/Salesforce/codegen2-7B)
+* [CodeGen2-16B](https://huggingface.co/Salesforce/codegen2-16B)
+
+Model cards outline how to use the model for causal and infill sampling.
+
 ## Sampling
 
 Program synthesis in the form of auto-regressive sampling can be performed as follows:
