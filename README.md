@@ -11,7 +11,7 @@ Official research release for the **CodeGen2** models (`1B`, `3B`, `7B`, `16B`) 
 Model checkpoints are published at Hugging Face Hub.
 
 * [CodeGen2-1B](https://huggingface.co/Salesforce/codegen2-1B)
-* [CodeGen2-3.7B](https://huggingface.co/Salesforce/codegen2-3.7B)
+* [CodeGen2-3.7B](https://huggingface.co/Salesforce/codegen2-3_7B)
 * [CodeGen2-7B](https://huggingface.co/Salesforce/codegen2-7B)
 * [CodeGen2-16B](https://huggingface.co/Salesforce/codegen2-16B)
 
